@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flores Isabel | Florería en Mendoza</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #faf7f5;
+    color: #333;
+}
+
+header {
+    background: url("https://marketplace.canva.com/EAFC2rV_e-A/1/0/1600w/canva-fondo-de-pantalla-floral-4q4sJJbDCiM.jpg") center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    background: rgba(0,0,0,0.4);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.section h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.flowers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.flower-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 450px; /* MISMO TAMAÑO PARA TODAS */
+}
+
+.flower-card:hover {
+    transform: translateY(-5px);
+}
+
+.flower-card img {
+    width: 100%;
+    height: 250px; /* ALTURA UNIFORME */
+    object-fit: cover;
+}
+
+.flower-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.flower-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.flower-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.season {
+    font-weight: bold;
+    color: #b04a5a;
+    margin-top: auto;
+}
+
+.map-section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #f2e9e4;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Flores Isabel</h1>
+</header>
+
+<section class="section">
+<h2>Nuestras Flores</h2>
+
+<div class="flowers-grid">
+
+<!-- ROSAS -->
+<div class="flower-card">
+<img src="https://media.admagazine.com/photos/651159b4503c330e0a09a982/1:1/w_2250,h_2250,c_limit/rosas-cuidados-significado.jpg" alt="Rosas">
+<div class="flower-content">
+<h3>🌹 Rosas</h3>
+<p>Simbolizan amor y elegancia. Son las más elegidas para aniversarios y fechas especiales.</p>
+<p class="season">Temporada: Todo el año (mejor calidad en primavera).</p>
+</div>
+</div>
+
+<!-- GIRASOLES -->
+<div class="flower-card">
+<img src="https://lufloreria.com/cdn/shop/files/WhatsAppImage2024-01-22at15.50.03_1.jpg?v=1705960235&width=1946" alt="Girasoles">
+<div class="flower-content">
+<h3>🌻 Girasoles</h3>
+<p>Transmiten energía y felicidad. Ideales para celebraciones y regalos vibrantes.</p>
+<p class="season">Temporada: Verano y otoño temprano.</p>
+</div>
+</div>
+
+<!-- MARGARITAS -->
+<div class="flower-card">
+<img src="https://previews.123rf.com/images/photosky99/photosky991509/photosky99150900119/46178801-yellow-flowers-close-up-on-paper-rough-texture.jpg" alt="Margaritas">
+<div class="flower-content">
+<h3>🌼 Montoneras</h3>
+<p>Frescas y delicadas, representan pureza y sencillez.</p>
+<p class="season">Temporada: Primavera y verano.</p>
+</div>
+</div>
+
+<!-- LIRIOS -->
+<div class="flower-card">
+<img src="https://www.floresenelmundo.com/images/products/500x500/ramo-lilium-blancos_1.jpg" alt="Lirios">
+<div class="flower-content">
+<h3>🌸 Lirios</h3>
+<p>Elegantes y aromáticos, ideales para eventos formales.</p>
+<p class="season">Temporada: Primavera.</p>
+</div>
+</div>
+
+<!-- CLAVELES -->
+<div class="flower-card">
+<img src="https://s2.ppllstatics.com/mujerhoy/www/multimedia/202505/14/media/cortadas/clavel-kqME-U2301766883953zgD-1248x1248@MujerHoy.jpg" alt="Claveles">
+<div class="flower-content">
+<h3>🌺 Claveles</h3>
+<p>Duraderos y versátiles, disponibles en múltiples colores.</p>
+<p class="season">Temporada: Todo el año.</p>
+</div>
+</div>
+
+<!-- TULIPANES -->
+<div class="flower-card">
+<img src="https://images.unsplash.com/photo-1520763185298-1b434c919102" alt="Tulipanes">
+<div class="flower-content">
+<h3>🌷 Tulipanes</h3>
+<p>Refinados y delicados, muy elegidos para regalos elegantes.</p>
+<p class="season">Temporada: Finales de invierno y primavera.</p>
+</div>
+</div>
+
+<!-- ORQUÍDEAS -->
+<div class="flower-card">
+<img src="https://m.media-amazon.com/images/I/61dZBXOZpmL._AC_UF894,1000_QL80_.jpg" alt="Orquídeas">
+<div class="flower-content">
+<h3>🌺 Crestas</h3>
+<p>Exóticas y sofisticadas, simbolizan belleza y distinción.</p>
+<p class="season">Temporada: Todo el año (según variedad).</p>
+</div>
+</div>
+
+<!-- LAVANDA -->
+<div class="flower-card">
+<img src="https://greenchoiceflowers.com/cdn/shop/products/Lisanthus_assorted.jpg?v=1626522415" alt="Lavanda">
+<div class="flower-content">
+<h3>💜 Lisianthus</h3>
+<p>Aromática y relajante, perfecta para decoración natural.</p>
+<p class="season">Temporada: Primavera y verano.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section map-section">
+<h2>📍 Nuestra Ubicación</h2>
+<p>Roca 6239, Guaymallén, Mendoza, Argentina</p>
+
+<iframe
+src="https://www.google.com/maps?q=Roca%206239%2C%20Guaymall%C3%A9n%2C%20Mendoza%2C%20Argentina&output=embed"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+</section>
+
+<footer>
+© 2026 Flores Isabel | Florería en Guaymallén, Mendoza  
+<br>
+WhatsApp: +54 9 261 XXXXXXXX
+</footer>
+
+</body>
+</html>
+
